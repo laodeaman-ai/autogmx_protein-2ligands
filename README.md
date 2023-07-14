@@ -1,5 +1,5 @@
 # autogmx_protein-2ligand
-Skrip ini berguna untuk automatisasi simulasi MD menggunakan gromacs untuk banyak kompleks protein-ligand dimana setiap kompleks terdiri dari resepetor dan 2 ligand. 
+Skrip ini berguna untuk automatisasi simulasi MD menggunakan gromacs untuk banyak kompleks protein-ligand dimana setiap kompleks terdiri dari reseptor dan 2 ligand. 
 
 1. Setiap kompleks berada dalam direktori berbeda, dan setiap direktori kompoleks berada pada direktori kerja.
 2. Direktori kompleks berisi file protein dan 2 file ligand format pdb.
