@@ -9,6 +9,7 @@
 #Untuk simulasi MD kompleks protein-ligan dengan 1 ligan dalam sistem, gunakan skrip lain yang telah kami sediakan.
 #Selamat ber_MD :)
 
+#!/bin/bash
 # Membuat topology protein dan ligan
 for dir in */; do
     cd "$dir"
@@ -204,7 +205,7 @@ for dir in */; do
 wait
 done
 
-# NVT, NPT DAN PRODUKSI
+# Preparasi MDP
 for dir in */; do
     cd $dir
     # Menyalin file mdp
@@ -217,6 +218,14 @@ done
 
 for dir in */; do
     cd $dir
+    
+    # Mendapatkan ID ligan
+    lig1="lig1.acpype/lig1_NEW.pdb"
+    lig2="lig2.acpype/lig2_NEW.pdb"
+    wait
+    lig1_id=$(awk 'NR==4{print $4}' "$lig1")
+    lig2_id=$(awk 'NR==4{print $4}' "$lig2")
+    wait
     # Mengganti teks "Protein_LIG" menjadi "Protein_$lig1_id_$lig2_id"
     sed -i "s/Protein_LIG/Protein_${lig1_id}_${lig2_id}/g" nvt.mdp
     sed -i "s/Protein_LIG/Protein_${lig1_id}_${lig2_id}/g" npt.mdp
@@ -225,6 +234,7 @@ for dir in */; do
 wait
 done
 
+# NVT, NPT DAN PRODUKSI
 for dir in */; do
     cd $dir
     gmx grompp -f nvt.mdp -c em.gro -r em.gro -p topol.top -n index.ndx -o nvt.tpr -maxwarn 1 && \
