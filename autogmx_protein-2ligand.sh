@@ -9,7 +9,6 @@
 #Untuk simulasi MD kompleks protein-ligan dengan 1 ligan dalam sistem, gunakan skrip lain yang telah kami sediakan.
 #Selamat ber_MD :)
 
-#!/bin/bash
 # Membuat topology protein dan ligan
 for dir in */; do
     cd "$dir"
