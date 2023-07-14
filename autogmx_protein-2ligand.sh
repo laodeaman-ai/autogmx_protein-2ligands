@@ -255,3 +255,6 @@ for dir in */; do
     cd ..
 wait
 done
+
+echo Succesfully
+echo This script written by La Ode Aman, laode_aman@ung.ac.id, Universitas Negeri Gorontalo
