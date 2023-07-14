@@ -9,5 +9,6 @@ Skrip ini berguna untuk automatisasi simulasi MD menggunakan gromacs untuk banya
 6. Pastikan nama resepetor memiliki awalan "rec" sehingga terbaca "rec*"
 7. Pastikan ID molekul setiap ligan yang berada di dalam file pdb telah diubah menjadi LIG.
 8. Pastikan pada mesin anda telah terinstall gromacs, acpype dan paket-paket dependensinya.
-9. Skrip ini hanya mengeksekusi kompleks protein-ligand dengan jumlah molekul ligan = 1. Untuk simulasi MD kompleks protein-ligan dengan 2 ligan dalam satu sistem, gunakan skrip lain yang telah kami sediakan.
-10. Selamat ber_MD :)
+9. Skrip ini hanya mengeksekusi kompleks protein-ligand dengan jumlah molekul ligan = 1. Untuk simulasi MD kompleks protein-ligan dengan 2 ligan dalam satu sistem, gunakan skrip lain yang telah kami sediakan:
+    https://github.com/laodeaman-ai/autogmx_protein-1ligand/tree/main
+11. Selamat ber_MD :)
