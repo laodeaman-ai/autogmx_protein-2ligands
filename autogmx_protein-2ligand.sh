@@ -5,7 +5,7 @@
 #Pastikan nama resepetor memiliki awalan "rec" sehingga terbaca "rec*"
 #Pastikan ID molekul setiap ligan yang berada di dalam file pdb telah diubah menjadi LIG
 #Pastikan pada mesin anda telah terinstall gromacs, acpype dan paket-paket dependensinya.
-#Skrip ini hanya mengeksekusi kompleks protein-ligand dengan jumlah molekul ligan = 1. 
+#Skrip ini hanya mengeksekusi kompleks protein-ligand dengan jumlah molekul ligan = 2. 
 #Untuk simulasi MD kompleks protein-ligan dengan 1 ligan dalam sistem, gunakan skrip lain yang telah kami sediakan.
 #Selamat ber_MD :)
 
